@@ -75,7 +75,7 @@ function beginEditing(task, taskItem, taskLabel, editButton) {
     saveButton.classList.add('save-button');
     saveButton.setAttribute('aria-label', `Save task: ${task.text}`);
 
-    taskItem.replaceChild(editInput, taskLabel);
+    taskLabel.replaceWith(editInput);
     editButton.replaceWith(saveButton);
 
     editInput.focus();
